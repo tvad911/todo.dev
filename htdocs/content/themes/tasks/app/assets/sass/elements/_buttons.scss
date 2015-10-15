@@ -1,0 +1,42 @@
+@mixin button($background-color: $light-blue, $color: $white, $size: 16){
+  @include font-size($size);
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: $color;
+  text-align: center;
+  padding: 0.5em 1.2em;
+  background-color: $background-color;
+  border: none;
+  @include border-radius(3px, 3px);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 100%;
+  outline: none;
+}
+
+.add-task, .add-task:link, .add-task:active, .add-task:visited{
+  @include button();
+}
+
+.add-task:hover{
+  @include button(shade($light-blue, 20%));
+}
+
+.back-to-tasks{
+  @extend .add-task;
+}
+
+.remove-task{
+  @include button($red);
+  display: none;
+  margin-left: 0.3em;
+}
+
+.remove-task:hover{
+  @include button(shade($red, 20%));
+}
+
+.remove-task.show{
+  display: inline-block;
+}

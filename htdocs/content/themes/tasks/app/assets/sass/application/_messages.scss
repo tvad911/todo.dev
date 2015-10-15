@@ -1,0 +1,18 @@
+.messages-wrapper{
+  min-height: 32px;
+  padding: 2em 0;
+}
+
+.messages{
+  p{
+    @include font-size(16);
+    font-weight: 600;
+    color: $white;
+    padding: 0.5em 1em;
+    border-left: 4px solid $green;
+  }
+
+  p.error{
+    border-left: 4px solid $red;
+  }
+}

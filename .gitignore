@@ -1,0 +1,24 @@
+### Miscellaneous
+.DS_Store
+Thumbs.db
+
+### Composer
+composer.lock
+/vendor/
+
+### IDE
+.idea/
+
+### Wordpress
+/htdocs/cms/
+/htdocs/content/mu-plugins/themosis-framework/
+/htdocs/content/themes/themosis-theme/
+/htdocs/content/uploads/
+/htdocs/content/upgrade/
+
+### Environment Credentials
+.env.*.php
+
+### Build processors
+/htdocs/content/themes/tasks/app/assets/node_modules/
+/htdocs/content/themes/tasks/app/assets/.sass-cache/
